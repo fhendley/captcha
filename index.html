@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel = "stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+
+  <body onpageshow ="captcha()">
+  <div class="container">
+
+    <div class="description">
+      <h1> One Click Away </h1>
+      <br>
+      <p>Don’t hesitate to get in touch, we don’t bite.</p>
+      <br>
+      <p> Our team is available 7 days a week to answer your questions and discuss how we can help achieve your goals.</p>
+      <h3> Message Us </h3>
+    </div>
+
+  <div id="signup">
+  <form action=""  name="form" onsubmit="return validate();">
+
+  Full Name: <br>
+  <input type="text" name="name" />
+  <br><br>
+
+  Email: <br>
+  <input type="email" name="email" />
+  <br><br>
+
+  Phone:<br>
+  <input type="tel" name="phone" />
+  <br><br>
+
+  Message:<br>
+  <textarea name="mes" rows="3" cols="30"></textarea>
+  <!-- <input type="text" name="mes" /> -->
+  <br><br>
+
+  Enter Captcha (case sensitive): <br>
+
+  <p id="contactForm" ></p>
+  <input type="text" name="captcha" />
+  <br>
+
+
+
+  <input class="submit" type="submit" />
+  </form>
+    <button class = "refresh" onclick="captcha()">Refresh</button>
+
+</div>
+</div>
+
+      <script src="js.js"></script>
+
+  </body>
+</html>

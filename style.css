@@ -1,0 +1,80 @@
+:root {
+  --bkgd-blue: #0070e2;
+  --ul-red: #e20038;
+}
+
+body {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  background-color: black;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#signup {
+
+  padding: 10px;
+  background-color:White;
+  text-transform: uppercase;
+  width: 400px;
+  font-weight: bold;
+
+
+}
+.description {
+  padding: 50px;
+  background-color: var(--bkgd-blue);
+  color: white;
+  height:300px;
+}
+.description h1,h3 {
+  text-transform: uppercase;
+}
+
+form{
+  justify-content: center;
+  margin: 10px;
+  padding: 10px 20px;
+}
+input, textarea{
+  padding: 20px;
+  border: none;
+  border-bottom: solid 2px;
+  border-color: var(--ul-red);
+  width: 90%;
+
+}
+
+
+input:focus ,textarea:focus {
+  transition: all .5s ease;
+  background-color: #CCCCCC;
+  border-color: var(--bkgd-blue);
+}
+.submit, .refresh {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 10px;
+  padding: 15px;
+  width: 40%;
+  background-color: var(--ul-red);
+  border: none;
+}
+.refresh {
+  margin-left: 30px;
+  margin-top: 0px;
+}
+
+.submit:hover, .refresh:hover {
+  transition: all .5s ease;
+  background-color: var(--bkgd-blue);
+}
