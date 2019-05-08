@@ -21,7 +21,7 @@ function captcha(imgAr, path) {
     // console.log(imgAR)
     document.getElementById("contactForm").src = img;
     // console.log(imgStr);
-    console.log(img);
+    // console.log(img);
     word = img.slice (7, -4);
     console.log(word);
 
@@ -41,8 +41,7 @@ function validate()
 {
 var local = word;
 
-    // if((form.name.value == "") || (form.email.value == "") || (form.phone.value == "") || (form.mes.value == "") || (form.captcha.value == ""))
-    if(form.name.value == "")
+    if((form.name.value == "") || (form.email.value == "") || (form.phone.value == "") || (form.mes.value == "") || (form.captcha.value == ""))
     {
         alert("Please fill in all fields");
         return false;
