@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
 
-  <body onpageshow ="captcha()">
+  <body onpageshow ="captcha(random_images_array)">
   <div class="container">
 
     <div class="description">
@@ -37,9 +37,9 @@
   <!-- <input type="text" name="mes" /> -->
   <br><br>
 
-  Enter Captcha (case sensitive): <br>
+  Enter Captcha: <br>
 
-  <p id="contactForm" ></p>
+  <img id="contactForm" src=""></img>
   <input type="text" name="captcha" />
   <br>
 
@@ -47,7 +47,7 @@
 
   <input class="submit" type="submit" />
   </form>
-    <button class = "refresh" onclick="captcha()">Refresh</button>
+    <button class = "refresh" onclick="captcha(random_images_array)">Refresh</button>
 
 </div>
 </div>

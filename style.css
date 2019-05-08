@@ -50,7 +50,9 @@ input, textarea{
   width: 90%;
 
 }
-
+.img {
+  width: 100%;
+}
 
 input:focus ,textarea:focus {
   transition: all .5s ease;
